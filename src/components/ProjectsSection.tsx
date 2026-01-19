@@ -3,46 +3,39 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Were2go: deployed app",
+    description: "Built and deployed a social app that finds all available events in Toronto, so that you to connect and see where your friends are going. \nManaged to get 200 active users.",
+    tags: ["Typescript", "App development", "Entrepreneurship", "React-Native"],
+    link: "https://apps.apple.com/ch/app/wertogo/id6751991624?l=en-GB",
+    isPrivate: false,
+  },
+  {
+    title: "Docling",
+    description: "Finetuned GraniteDocling vision model and implemented 2 stage pipeline that preprocesses documents by running a layout model to extract bounding boxes, guiding the VLM for better extraction of information",
+    tags: ["Computer Vision", "Research", "MLOps", "Software Engineering"],
+    link: "https://github.com/docling-project/docling",
+    isPrivate: false,
+  },
+  {
     title: "Computer Vision for Autonomous Cars",
     description: "Semantic Segmentation and Depth Estimation project for autonomous vehicles. Implemented DeepLabV3+ with multi-task learning for dense prediction tasks.",
     tags: ["Computer Vision", "Deep Learning", "Autonomous Cars", "PyTorch"],
-    link: null,
-    isPrivate: true,
-  },
-  {
-    title: "3D Object Detection from LiDAR Point Clouds",
-    description: "Built a 2-stage object detector for autonomous vehicles using LiDAR point clouds. Implemented Region Proposal Network and Refinement Network.",
-    tags: ["LiDAR", "3D Object Detection", "Point Clouds", "Autonomous Cars"],
-    link: null,
-    isPrivate: true,
-  },
-  {
-    title: "Aircraft Engine Anomaly Detection",
-    description: "Production-scale computer vision pipeline for Fortune 500 aviation client. Built end-to-end anomaly detection system processing 10k+ aircraft images, achieving 95%+ accuracy.",
-    tags: ["Production ML", "Computer Vision", "MLOps", "Fortune 500"],
-    link: "https://github.com/",
+    link: "https://github.com/ElHachem02/cvaiac2024",
     isPrivate: false,
   },
   {
-    title: "Swiss Legal Documents RAG System",
-    description: "Enterprise-grade RAG pipeline processing 50k+ legal documents for professional legal research. Built hybrid retrieval system with ColBERT embeddings.",
-    tags: ["Production RAG", "Legal Tech", "ColBERT", "Enterprise Scale"],
-    link: null,
-    isPrivate: true,
-  },
-  {
-    title: "LLM Security & Watermarking",
-    description: "Advanced research on Large Language Model security, implementing watermarking schemes, attack methods, and content filtering using CLIP embeddings.",
-    tags: ["AI Safety", "LLM Security", "CLIP", "Research"],
-    link: null,
-    isPrivate: true,
-  },
-  {
-    title: "Big Data Technologies",
-    description: "Comprehensive implementation of big data technologies including S3, DynamoDB, HDFS, and Spark for scalable data processing and analytics.",
-    tags: ["Spark", "HDFS", "S3", "DynamoDB"],
-    link: "https://github.com/",
+    title: "IEEE published paper",
+    description: "Designed an experiment to measure cognitive load of participants while reading several articles. Feature engineered and trained classical machine learning models to predict cognitive load from EEG signals. The goal is to use this prediciton to personalise education.",
+    tags: ["Research", "Neuroscience", "Feature Engineering", "Classical Machine Learning"],
+    link: "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11045966",
     isPrivate: false,
+  },
+  {
+    title: "Optiver x Google hackathon",
+    description: "In a Google Developer Club’s Hackaton, my team and I used Data Science techniques in order to implement the best financial model that predicts Tesla’s stock volatility on Optiver’s simulation. We ranked 1st between 210 students.",
+    tags: ["Hackathon", "Time Series", "Option prediction", "Linear models"],
+    link: null,
+    isPrivate: true,
   },
 ];
 
@@ -51,7 +44,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="section-title text-center">Featured Projects</h2>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
