@@ -9,7 +9,7 @@ const HeroSection = () => {
     >
       <div className="text-center max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-up">
-          <span className="text-gradient">Your Name</span>
+          <span className="text-gradient">Peter El Hachem</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-up-delay-1">
           Data Scientist & Software Engineer | Building Production ML/Software Systems at Scale
@@ -24,7 +24,7 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
-      
+
       <div className="absolute bottom-10 animate-bounce">
         <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
           <ArrowDown className="w-6 h-6" />
